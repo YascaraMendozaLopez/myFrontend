@@ -13,7 +13,8 @@ const useStyles = makeStyles((theme) => ({
         "&::after": {
             filter: "blur(100px)"
         },
-        [theme.breakpoints.down("md")]: {
+        [mq("xs")]: {
+            width: "100%",
             position: "fixed",
         },
 

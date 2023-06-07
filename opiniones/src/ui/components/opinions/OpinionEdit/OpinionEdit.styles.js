@@ -3,28 +3,21 @@ import mq from '../../../../config/mq';
 
 const useStyles = makeStyles((theme) => ({
     wrapper: {
-        display: "flex",
-        flexDirection: "column",
-        marginLeft: "27px",
+        width:  "874px",
         backgroundColor: theme.palette.primary.main,
-        [mq("xxs")]: {
-            width: "439px"
-        },
-        [mq("md")]: {
-            width: "864px"
-        },
-        [mq("xs")]: {
-            width: "864px"
-        },
+        
+
         [mq("lg")]: {
-            width: "439px"
-        },
-        [theme.breakpoints.down("md")]: {
-            marginLeft: "0px",
-        },
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            width: "375px",
+            marginLeft: "27px",
+        }
     },
     title: {
-        
+        display: "flex",
+        alignItems: "center",
         height: "53px",
         backgroundColor: theme.palette.secondary.light,
         fontFamily: "DMSans-Bold",
@@ -35,21 +28,32 @@ const useStyles = makeStyles((theme) => ({
     user: {
         display: "flex",
         justifyContent: "start",
+        alignItems: "center",
+        paddingTop: "20px",
+        paddingBottom: "10px",
         paddingLeft: "20px",
-        height: "76px"
+        height: "76px",
+
+        [mq("xs")]:{
+            height: "56px",
+        }
     },
     data: {
         fontFamily: "DMSans-Regular",
         paddingLeft: "20px",
-        color: theme.palette.common.dark
+        color: theme.palette.common.dark,
+
     },
     name: {
         fontSize: "16px",
         marginBottom: "0",
+        marginTop: "0",
     },
     date: {
         fontSize: "12px",
         marginTop: "0",
+        marginBottom: "0",
+
     },
     blockOpinion: {
         boxShadow: "0px 0px 2.14px 0.1px" + theme.palette.primary.dark,
