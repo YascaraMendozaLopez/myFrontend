@@ -143,7 +143,5 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: "23px",
         marginBottom: "0"
     },
-
-
 }));
 export default useStyles
