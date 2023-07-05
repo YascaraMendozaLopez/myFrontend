@@ -17,8 +17,8 @@ const useStyles = makeStyles((theme) => ({
             width: "100%",
             position: "fixed",
         },
-
     },
+    
     modal: {
         [mq("xs")]: {
             width: "90%"

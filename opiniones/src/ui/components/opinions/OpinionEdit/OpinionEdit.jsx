@@ -35,6 +35,7 @@ const OpinionEdit = ({ rating, onChangeRating }) => {
 
   const handleCancelClick = () => {
     setEditing(false);
+    setValue(rating);
   };
 
   const handleTextChange = (event) => {
@@ -75,6 +76,7 @@ const OpinionEdit = ({ rating, onChangeRating }) => {
       <div className={classes.title}>
         <p>Opinion cliente</p>
       </div>
+
       <div className={classes.user}>
         <img src={user} alt="user" />
         <dir className={classes.data}>
@@ -82,6 +84,7 @@ const OpinionEdit = ({ rating, onChangeRating }) => {
           <p className={classes.date}>2020-05-01 06:05:46</p>
         </dir>
       </div>
+
       <div className={classes.blockOpinion}>
         <div className={classes.score}>
           <p>Opinion</p>
@@ -89,6 +92,7 @@ const OpinionEdit = ({ rating, onChangeRating }) => {
             <Score value={value} />
           </div>
         </div>
+        
         <div className={classes.textOpinion}> 
             {editing ? <textarea value={editText} className={classes.textarea} onChange={handleTextChange}></textarea> : <div className={classes.opinion}>{text}</div>}
         </div>

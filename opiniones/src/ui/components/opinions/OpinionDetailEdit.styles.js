@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
             width:"95%",
             flexWrap: "wrap",
             display: "flex",
-
             marginLeft: "20px"
         },
 

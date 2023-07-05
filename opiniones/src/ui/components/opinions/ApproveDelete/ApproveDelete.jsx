@@ -6,6 +6,7 @@ import DeleteSweepOutlinedIcon from '@mui/icons-material/DeleteSweepOutlined';
 import useStyles from './ApproveDelete.style';
 
 const ApproveDelete = ({ isOpen, setIsOpen }) => {
+  
   const classes = useStyles();
   const [accept, setAccept] = useState(false);
   const handleCloseReset = () => {
